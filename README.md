@@ -1,79 +1,80 @@
-SkillShare Backend - Spring Boot + MongoDB
-This is the backend for the SkillShare Platform — a social learning and content-sharing platform where users can create posts, learning plans, like, comment, follow others, and receive notifications.
+# SkillShare Backend
 
-Built using:
+A complete backend system for SkillShare — a social learning and content-sharing platform.
 
-Java 21
+---
 
-Spring Boot 3.4.4
+## 🚀 Built With
+- Java 21
+- Spring Boot 3.4.4
+- MongoDB
+- JWT Authentication
+- Maven
 
-MongoDB
-ttt
-JWT Authentication
+---
 
-Maven
+## 📚 Main Features
+- 🔐 User Authentication (Register/Login)
+- 🗁️ JWT-based Secure API Protection
+- 👤 User Profile Management (View, Update, Delete)
+- 🤝 Follow / Unfollow Users
+- 📝 Create, Update, Delete Posts (with Media Upload)
+- ❤️ Like / Unlike Posts
+- 💬 Add, Edit, Delete Comments
+- 📚 Create and Manage Personalized Meal Plans
+- 🔔 Real-time Notifications (Like / Comment / Follow)
+- 🛠️ Clean REST API Structure following Best Practices
 
-Main Features
-User Authentication (Register/Login)
+---
 
-JWT-based Secure APIs
-
-User Profile Management (View, Update, Delete)
-
-Follow / Unfollow Users
-
-Create, View, Update, Delete Posts (with Media Upload)
-
-Like / Unlike Posts
-
-Add / Edit / Delete Comments on Posts
-
-Create Personalized Learning Plans
-
-Assign Meal Plans to Users
-
-Real-time Notifications for Likes, Follows, and Comments
-
-Clean REST API following Best Practices
-
-Project Structure
-css
-Copy
-Edit
+## 📂 Project Structure
+```
 src/main/java/com/skillshare/
-├── config/         (Security + CORS)
+├── config/         (Security, CORS setup)
 ├── controller/     (All REST endpoints)
-├── dto/            (Data Transfer Objects)
-├── exception/      (Error Handling)
-├── model/          (MongoDB Models)
-├── repository/     (MongoDB Repositories)
-├── security/       (JWT Auth Logic)
+├── dto/            (Data Transfer Objects for API)
+├── exception/      (Global Exception Handling)
+├── model/          (MongoDB Data Models)
+├── repository/     (MongoDB Access Repositories)
+├── security/       (JWT Authentication Filters & Utils)
 ├── service/        (Business Logic)
-└── SkillshareBackendApplication.java (Main App Starter)
-How to Run
-Clone the repository
+└── SkillshareBackendApplication.java (Application Starter)
+```
 
-Set up MongoDB Atlas connection or local MongoDB
+---
 
-Configure database URL and JWT secret in application.properties
+## 🛠️ How to Run Locally
+1. Clone the repository
+2. Update `application.properties` with your MongoDB connection details and JWT secret
+3. Build and start the server:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+4. Server will start at:
+   ```
+   http://localhost:8080
+   ```
 
-Run the project:
+---
 
-bash
-Copy
-Edit
-./mvnw spring-boot:run
-Server runs at: http://localhost:8080
+## 🧪 Postman API Testing
+- **Authentication** (Register/Login)
+- **User Profile Management**
+- **Post CRUD + Media Upload**
+- **Likes and Comments**
+- **Meal Plans**
+- **Notifications**
 
-Postman Testing
-Authentication
+Postman collection available separately.
 
-User Profiles
+---
 
-Posts (Media Upload, Like, Comment)
+## 🤝 Contribution
+Pull requests and improvements are welcome!  
+This project is intended for learning, practicing REST API backend development, and understanding secure full-stack application setups.
 
-Meal Plans
+---
 
-Notifications
 
-Postman collection is available.
+Thank you for visiting the project! 🎉
+
